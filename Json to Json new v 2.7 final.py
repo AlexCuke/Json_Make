@@ -40,12 +40,17 @@ class ContentData:
 
         save = 's' in choice
         cont = 'y' in choice
+        save_cont = 'sy' in choice
 
         if save:
             text = result if isinstance(result, str) else str(result)
             self.fs.write_lines(text)
 
         if cont:
+            return self.process_data(result, depth + 1)
+        if save_cont:
+            text = result if isinstance(result, str) else str(result)
+            self.fs.write_lines(text)
             return self.process_data(result, depth + 1)
 
         return result
