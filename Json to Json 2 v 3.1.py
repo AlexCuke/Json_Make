@@ -4,7 +4,7 @@ import hl7
 import re
 from pprint import pprint
 
-from file_open_save import FileS, filename #Импортируем данные из функций и класса импорта файлов
+from file_open_save_v_1_1 import FileS #Импортируем данные из функций и класса импорта файлов
 
 ALLOWED_TYPES = (dict, list, str) # Типы данных
 
@@ -97,7 +97,7 @@ class ContentData:
         print("Элементы списка:")
 
         for i, piece in enumerate(data):
-            print(f"[{i}] {type(piece).__name__}")
+            print(f"Номер:{i} Тип: {type(piece).__name__} Количество элементов: {len(piece)}")
             pprint(piece)
             print('')
 
@@ -202,8 +202,7 @@ def test():
     fs = FileS()                                                #создание обьекта класса FileS
     #print(fs)
     print('fs = FileS():', type(fs))
-    print('filename:', type(filename))
-    content = fs.open_file(filename)                            #сырая выгрузка данных из файла, 
+    content = fs.open_file()                            #сырая выгрузка данных из файла, 
     #print(content)
     print('content = fs.open_file(filename):', type(content))
     cd = ContentData(content)                                   #создание обьекта класса cd и всегла строка так как "сырое содержимое"                   

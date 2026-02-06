@@ -1,0 +1,37 @@
+{
+  "prot_code": null,
+  "f_c_uid": "44dff75c-3ac9-4822-b9a9-dc77c91932ec::m15.dzm::1",
+  "linked_c_uid": "f43ceea6-26fe-11ef-8ee9-fb895db9c756",
+  "composer": "ЭКСПЕРТ Т.И.",
+  "formname": null,
+  "createdate": "2024-07-19T10:54:49.281Z",
+  "source_uid": "",
+  "combined_proc_key": "f43ceea6-26fe-11ef-8ee9-fb895db9c756|openEHR-EHR-COMPOSITION.t_anti-decubitus_measures.v1",
+  "ehrid": "085c8fba-54e8-491c-958e-9ccc77d6b429",
+  "doctype": "Лист регистрации противопролежневых мероприятий",
+  "c_temp": "openEHR-EHR-COMPOSITION.t_anti-decubitus_measures.v1",
+  "c_uid": "44dff75c-3ac9-4822-b9a9-dc77c91932ec::m15.dzm::2",
+  "sign_stat": "",
+  "caseID": "0cda2966-745e-444f-8168-e183a43a3f06",
+  "comp_tags": {
+    "tags": [
+      {
+        "tag": "sign",
+        "value": "{\"010-101-010 11\":\"ЭКСПЕРТ ТП ИАЦ|Врач-акушер-гинеколог|2024-07-19T10:54:55.386Z|9edb4bbe-5805-4da5-b777-7cf3b0919e86\"}",
+        "aqlPath": "/"
+      },
+      {
+        "tag": "formname",
+        "value": null,
+        "aqlPath": "/"
+      },
+      {
+        "tag": "formversion",
+        "value": null,
+        "aqlPath": "/"
+      }
+    ]
+  },
+  "l_c_uid": "ehr:compositions/44dff75c-3ac9-4822-b9a9-dc77c91932ec",
+  "lpuname": "Государственное бюджетное учреждение здравоохранения города Москвы «Московский многопрофильный клинический центр «Коммунарка» Департамента здравоохранения города Москвы» ТЕСТ"
+}
