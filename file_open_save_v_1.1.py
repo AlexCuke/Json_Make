@@ -4,7 +4,6 @@ from datetime import datetime
 
 filename = "1.json"
 
-
 # определение времени сохранения файла
 def time_now() -> str:
     return datetime.now().strftime('%y_%m_%d_%H_%M_%S')
@@ -13,10 +12,7 @@ def time_now() -> str:
 class FileS:
     #открытие файла
     @staticmethod
-    def name_file(path: str) -> str:
-        filename=input("Введите имя файла без расширения")
-        filename=filename+'.json'
-        return filename
+
     def open_file(path: str) -> str:
         try:
             with open(path, 'r', encoding='utf-8') as f:

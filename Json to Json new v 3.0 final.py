@@ -3,8 +3,8 @@ import hl7parser
 import hl7
 import re
 from pprint import pprint
-
-from file_open_save import FileS, filename #Импортируем данные из функций и класса импорта файлов
+from file_open_save import name_file
+from file_open_save import FileS #Импортируем данные из функций и класса импорта файлов
 
 ALLOWED_TYPES = (dict, list, str) # Типы данных
 
@@ -200,9 +200,10 @@ def _print(dataset):
     print(type(dataset))
 def test():
     fs = FileS()                                                #создание обьекта класса FileS
-    #print(fs)
     print('fs = FileS():', type(fs))
-    print('filename:', type(filename))
+    filename=name_file()
+    print('filename:', filename, ', Type: ',type(filename))  
+  
     content = fs.open_file(filename)                            #сырая выгрузка данных из файла, 
     #print(content)
     print('content = fs.open_file(filename):', type(content))

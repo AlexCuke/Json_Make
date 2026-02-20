@@ -4,7 +4,6 @@ from datetime import datetime
 
 filename = "1.json"
 
-
 # определение времени сохранения файла
 def time_now() -> str:
     return datetime.now().strftime('%y_%m_%d_%H_%M_%S')

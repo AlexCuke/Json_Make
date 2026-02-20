@@ -2,12 +2,13 @@ import json
 import sys
 from datetime import datetime
 
-filename = "1.json"
-
 # определение времени сохранения файла
 def time_now() -> str:
     return datetime.now().strftime('%y_%m_%d_%H_%M_%S')
-
+filename=''
+def name_file() :
+        filename=input("Введите имя файла: ")      
+        return filename
 #Класс, отвечающий за обработку файлов
 class FileS:
     #открытие файла
